@@ -1,0 +1,14 @@
+prefix=/root/junz/ffmpeg-2.5/build/ffmpeg/armv7
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 53.3.100
+Requires: libavutil >= 54.15.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: 
+Cflags: -I${includedir}
